@@ -27,3 +27,39 @@ inoremap <expr> <Down>     pumvisible() ? '\<C-n>' : '\<Down>'
 inoremap <expr> <Up>       pumvisible() ? '\<C-p>' : '\<Up>'
 inoremap <expr> <PageDown> pumvisible() ? '\<PageDown>\<C-p>\<C-n>' : '\<PageDown>'
 inoremap <expr> <PageUp>   pumvisible() ? '\<PageUp>\<C-p>\<C-n>' : '\<PageUp>'
+
+
+
+
+
+
+
+
+
+"F2开启和关闭树"
+map f2 :NERDTreeToggle<CR>
+let NERDTreeChDirMode=1
+"显示书签"
+let NERDTreeShowBookmarks=1
+"设置忽略文件类型"
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
+"窗口大小"
+let NERDTreeWinSize=25
+
+"缩进指示线"
+let g:indentLine_char='┆'
+let g:indentLine_enabled = 1
+
+"autopep8设置"
+let g:autopep8_disable_show_diff=1
+
+map f4 <leader>ci <CR>
+
+
+
+
+
+
+
+
+
